@@ -312,7 +312,8 @@ static int galaxybook_acpi_method(struct samsung_galaxybook *galaxybook, acpi_st
 			pr_err("failed %s with ACPI method %s; device did not respond with success code 0x%x\n",
 					purpose_str,
 					method,
-					RFLG_SUCCESS);
+					RFLG_SUCCESS,
+					status);
 			status = -EIO;
 		} else if (out_obj->buffer.pointer[SAWB_GUNM_POS] == GUNM_FAIL) {
 			pr_err("failed %s with ACPI method %s; device responded with failure code 0x%x\n",
