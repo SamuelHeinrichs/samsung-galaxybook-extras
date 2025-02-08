@@ -159,7 +159,7 @@ struct sawb {
 #define SASB_USB_CHARGE_SET    0x68
 #define SASB_NOTIFICATIONS     0x86
 #define SASB_ALLOW_RECORDING   0x8a
-#define SASB_PERFORMANCE_MODE  0x56
+#define SASB_PERFORMANCE_MODE  0x91
 
 #define SAWB_RFLG_POS  4
 #define SAWB_GUNM_POS  5
