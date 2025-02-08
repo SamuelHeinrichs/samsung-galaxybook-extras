@@ -62,6 +62,7 @@ MODULE_PARM_DESC(i8042_filter, "Enable capturing keyboard hotkey events (default
  */
 
 static const struct acpi_device_id galaxybook_device_ids[] = {
+	{ "SAM0426" },
 	{ "SAM0427" },
 	{ "SAM0428" },
 	{ "SAM0429" },
