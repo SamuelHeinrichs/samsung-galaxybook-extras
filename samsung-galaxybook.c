@@ -164,7 +164,7 @@ struct sawb {
 #define SAWB_RFLG_POS  4
 #define SAWB_GUNM_POS  5
 
-#define RFLG_SUCCESS  0x0
+#define RFLG_SUCCESS  0xaa
 #define GUNM_FAIL     0xff
 
 #define GUNM_FEATURE_ENABLE          0xbb
@@ -312,7 +312,7 @@ static int galaxybook_acpi_method(struct samsung_galaxybook *galaxybook, acpi_st
 			pr_err("failed %s with ACPI method %s; device did not respond with success code 0x%x\n",
 					purpose_str,
 					method,
-					status);
+					out_obj->buffer.pointer[SAWB_RFLG_POS]);
 			status = -EIO;
 		} else if (out_obj->buffer.pointer[SAWB_GUNM_POS] == GUNM_FAIL) {
 			pr_err("failed %s with ACPI method %s; device responded with failure code 0x%x\n",
