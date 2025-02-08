@@ -164,7 +164,7 @@ struct sawb {
 #define SAWB_RFLG_POS  4
 #define SAWB_GUNM_POS  5
 
-#define RFLG_SUCCESS  0xaa
+#define RFLG_SUCCESS  0x0
 #define GUNM_FAIL     0xff
 
 #define GUNM_FEATURE_ENABLE          0xbb
