@@ -220,7 +220,7 @@ static const guid_t performance_mode_guid_value =
 #define ACPI_FAN_SPEED_LIST   "FANT"
 #define ACPI_FAN_SPEED_VALUE  "\\_SB.PC00.LPCB.H_EC.FANS"
 
-#define KBD_BACKLIGHT_MAX_BRIGHTNESS  F
+#define KBD_BACKLIGHT_MAX_BRIGHTNESS  3
 
 #define ACPI_NOTIFY_BATTERY_STATE_CHANGED    0x61
 #define ACPI_NOTIFY_DEVICE_ON_TABLE          0x6c
